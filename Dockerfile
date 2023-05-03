@@ -10,4 +10,4 @@ ADD mirror.list /etc/apt/mirror.list
 RUN useradd -m -s /bin/bash -U mirror
 USER mirror
 VOLUME [ "/mirror" ]
-ENTRYPOINT [ "mirrorly" ]
+ENTRYPOINT [ "mirrorly -c" ]
